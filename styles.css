@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+      font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+body {
+    font-family: "Source Serif 4", serif;
+}
+
+h1, h2, h3, h4, h5, h6 p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    width: 100vw;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* header */
+
+.header {
+    width: 100vw;
+    height: 7vh;
+    background-color: #A00000;
+    box-shadow: 0rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.btn-container {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.625rem;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}
+
+.comunication {
+    display: flex;
+    flex-direction: row;
+}
+
+/* hero */
+
+.hero {
+    width: 100vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("./images//heroBackImage.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-title {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 7rem;
+    text-align: center;
+    margin: 0;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+    color: #000;
+}
+
+.code-text {
+    color: #791b1b;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.cup-text {
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.registration-btn {
+    width: 25rem;
+    height: 5rem;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.registration-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.registration-lnk {
+    text-decoration: none;
+    color: #771212;
+    font-size: 3rem;
+}
+
+/* about */
+
+.about {
+    width: 100vw;
+    min-height: 45vh;
+    background: url("./images/aboutBackImage.png") center no-repeat;
+    background-size: cover;
+    background-color: #A00000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 
+        0rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.5),
+        0rem -0.3125rem 0.625rem rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.about-header-text {
+    width: 35rem;
+    height: 4rem;
+    background-color: #F0F0F0;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A00000;
+    font-size: 2.5rem;
+    font-style: italic;
+    position: relative;
+}
+
+.about-main-text {
+    width: 80%;
+    height: 15%;
+    color: white;
+    font-size: 2rem;
+    font-style: italic;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+/* steps */
+
+.steps {
+    width: 100vw;
+    height: 80vh;
+    background: url("./images/stagesBackImage.png") center no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.steps-left {
+    width: 60%;
+    padding: 1.875rem;
+}
+
+.steps-right {
+    width: 40%;
+    padding: 2rem;
+    display: flex;
+}
+
+.steps-right-title {
+    text-align: center;
+    font-style: italic;
+    font-size: 4rem;
+    color: #771212;
+}
+
+.steps-text {
+    padding: 1.25rem 3.125rem;
+}
+
+.steps-title {
+    font-style: italic;
+    font-size: 3rem;
+    color: #771212;
+}
+
+.steps-main-text {
+    font-style: italic;
+    font-size: 2rem;
+    color: #771212;
+}
+
+@media screen and (max-width: 1000px) {
+    .steps {
+        flex-direction: column;
+    }
+    .steps-left {
+        width: auto;
+    }
+    .steps-right {
+        width: auto;
+    }
+}
+
+/* faq */
+
+.faq {
+    width: 100vw;
+    height: 85vh;
+    background: url("./images/faqBackImg.svg") center no-repeat;
+    background-size: cover;
+    background-color: #A00000;
+    box-shadow: 
+        0rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.5),
+        0rem -0.3125rem 0.625rem rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 5rem;
+}
+
+.faq-list {
+    max-width: 48rem;
+    height: auto;
+    background-color: white;
+    border-radius: 1.125rem;
+}
+
+.faq-title {
+    color: white;
+    font-style: italic;
+    font-size: 4rem;
+}
+
+.faq-subtitle {
+    color: white;
+    font-style: italic;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.faq-question {
+    font-size: 2rem;
+    color: #A00000;
+    font-style: italic;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    border-bottom: 0.0625rem solid #A00000;
+    cursor: pointer;
+}
+
+.faq-answer {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #A00000;
+    height: auto;
+    max-height: 0px;
+    padding: 0 0.625rem;
+    background-color: #F0F0F0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    transition: max-height 0.5s ease;
+}
+
+.active .faq-answer {
+    padding: 0.625rem;
+    max-height: 200px;
+    transition: max-height 0.5s ease;
+}
+
+.faq-extra {
+    border-bottom-left-radius: 1.125rem;
+    border-bottom-right-radius: 1.125rem;
+}
+
+/* footer */
+
+.footer {
+    width: 100vw;
+    height: 50vh;
+    background: url("./images/footerBackImage.svg ") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-item {
+    padding: 1rem;
+}
+
+.footer-btn {
+    width: 30rem;
+    height: 5rem;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0rem 0.3125rem 0.625rem rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
